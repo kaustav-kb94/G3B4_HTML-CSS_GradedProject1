@@ -1,0 +1,150 @@
+body {
+  margin: 0%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#pharmNav {
+  background-color: #ddd;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+
+.menuPharm{
+margin: 0%;
+background-color: rgb(0, 0, 0, 0.5);
+}
+
+.menuPharm li{
+display: inline-block;
+padding: 10px;
+}
+
+.menuPharm li:hover {
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menuPharm li a{
+color: white;
+font-size: 20px;
+text-decoration: none;
+}
+
+#medicine, #health {
+  position: absolute;
+  width: auto;
+  max-width: 150px;
+  top: 40px;
+  display: none;
+  background-color: whitesmoke;
+  padding: 0%;
+}
+
+.menuPharm li:nth-child(2):hover #medicine, .menuPharm li:nth-child(3):hover #health{
+  display: block;
+  padding-left: 5px;
+}
+
+#medicine li, #health li{
+  display: block;
+}
+#medicine li:hover, #health li:hover{
+  background-color: gainsboro;
+}
+#medicine li a, #health li a{
+  color: steelblue;
+  font-size: 16px;
+}
+.product{
+  padding: 5px;
+  width: 14%;
+  min-width: 140px;
+  min-height: 180px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 3px;
+  background-color: rgb(243, 243, 253);
+  box-shadow: 5px 5px 10px gainsboro;
+}
+.product:hover{
+  width: 15%;
+  height: 185px;
+}
+.product >h4, .product > p{
+  margin: 0%;
+}
+.product > p{
+  font-size: 14px;
+  color: rgb(43, 124, 230);
+}
+.product img{
+  width: 98%;
+  height: 100px;
+}
+.product button{
+  width: 100%;
+  background-color: lavender;
+  font-size: 16px;
+  border: 1px solid blue;
+  color: orange;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.product button:active{
+  background-color: rgb(250, 234, 230);
+  border: 1px solid rgb(0, 255, 76);
+  
+}
+#img_section{
+  margin: 3px;
+  height: 400px;
+  min-height: 300px;
+  text-align: center;
+  background-color: rgb(163, 228, 228);
+  border: 5px solid steelblue;
+  animation-name: image-change;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+@keyframes image-change {
+  0%{
+      background-image: url(Images/Animation/ani1.jpg); 
+      background-repeat: no-repeat; 
+      background-size: contain; 
+      background-size: cover;
+  }
+ 25%{
+      background-image: url(Images/Animation/ani2.png); 
+      background-repeat: no-repeat; 
+      background-size: contain; 
+      background-size: cover;
+  }
+  50%{
+      background-image: url(Images/Animation/ani3.jpg); 
+      background-repeat: no-repeat; 
+      background-size: contain; 
+      background-size: cover;
+  }
+  75%{
+      background-image: url(Images/Animation/ani4.jpg); 
+      background-repeat: no-repeat; 
+      background-size: contain; 
+      background-size: cover;
+  }
+  100%{
+      background-image: url(Images/Animation/ani5.jpg); 
+      background-repeat: no-repeat; 
+      background-size: contain; 
+      background-size: cover;
+  }
+}
